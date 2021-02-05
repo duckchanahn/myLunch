@@ -28,12 +28,12 @@
         android:layout_margin="150dp"
         />
 
-    <TextView
+    <Button
         android:id="@+id/main_button_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Loding"
+        android:text="Start"
         />
 
 </LinearLayout>
