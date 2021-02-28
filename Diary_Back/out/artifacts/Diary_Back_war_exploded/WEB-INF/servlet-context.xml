@@ -17,11 +17,14 @@
 
     <!-- Process annotations on registered beans like @Autowired... -->
     <context:annotation-config/>
+    <bean id="tempDAO" class="dao.tempDAOimpl"/>
+
     <!-- 컴포넌트 스캔 -->
     <context:component-scan base-package="controller" />
     <context:component-scan base-package="constants" />
     <context:component-scan base-package="dao" />
     <context:component-scan base-package="dto" />
+
 
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">

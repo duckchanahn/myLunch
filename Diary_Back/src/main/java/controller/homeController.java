@@ -10,13 +10,13 @@ import org.springframework.ui.Model;
 @Controller
 public class homeController {
 
-//@Autowired
-//    private dao.tempDAO tempDAO;
+@Autowired
+    private tempDAO tempDAO;
 
     @RequestMapping({"/"})
     public String temp() {
 
-//        System.out.println(tempDAO.showCustomerName());
+        System.out.println(tempDAO.showCustomerName());
 
         return "index";
     }

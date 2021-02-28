@@ -13,6 +13,8 @@ public class tempDAOimpl implements tempDAO{
 
     @Override
     public String showCustomerName() {
+
         return sqlSession.selectOne("mappers.tempCustomer.selectCustomerName");
+
     }
 }
