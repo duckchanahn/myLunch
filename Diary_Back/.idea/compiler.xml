@@ -9,5 +9,8 @@
         <module name="Diary_Back" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Diary_Back" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
