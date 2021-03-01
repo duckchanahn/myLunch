@@ -4,8 +4,6 @@ import dto.temp;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.List;
-
 public class tempDAOimpl implements tempDAO{
 
     @Autowired
@@ -14,7 +12,7 @@ public class tempDAOimpl implements tempDAO{
     @Override
     public String showCustomerName() {
 
-        return sqlSession.selectOne("mappers.tempCustomer.selectCustomerName");
+        return this.sqlSession.selectOne("mappers.tempCustomer.selectCustomerName");
 
     }
 }
