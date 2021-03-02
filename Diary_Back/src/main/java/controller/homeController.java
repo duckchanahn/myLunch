@@ -1,22 +1,38 @@
 package controller;
 
+import org.json.simple.JSONObject;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import service.tempService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+import java.util.HashMap;
+import java.util.Map;
+
+@RestController
 public class homeController {
 
-@Autowired
+    @Autowired
     private service.tempService tempService;
 
-    @RequestMapping({"/"})
-    public String temp() {
+    @RequestMapping(method = RequestMethod.GET, value = "/getTemp/{str}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Map temp(@PathVariable String str) {
 
-        System.out.println(this.tempService.showCustomerName());
+//        ModelAndView mv = new ModelAndView();
+//
+//        JSONObject json =  new JSONObject();
 
-        return "index";
+        HashMap<String, String> json = new HashMap<>();
+
+        json.put("id", str);
+        json.put("pw", "sdasd");
+
+//        mv.addObject("result", json);
+//        mv.setViewName("/Ajax/jsonView");
+
+        return json;
     }
 
 }

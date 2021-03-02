@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     // Create URL
-                    URL githubEndpoint = new URL("http://10.0.2.2:1009/Diary_Back/list/5/");
+                    URL githubEndpoint = new URL("http://10.0.2.2:9909/getTemp/qqq");
 
                     HttpURLConnection myConnection =
                             (HttpURLConnection) githubEndpoint.openConnection();
