@@ -1,12 +1,21 @@
 Create Database myLunch;
-drop table restaurant;
+drop table restaurant_Seodaemun;
 drop table Administrative_district;
+
+rename Table restaurant to restaurant_Seodaemun;
 
 use myLunch;
 
-Create Table restaurant(
+show tables;
+
+Create Table tableName (id int AUTO_INCREMENT, address varchar(30), restaurantName varchar(20), restaurantCondition varchar(10), primary key(id));
+INSERT INTO tableName (address, restaurantName, restaurantCondition) VALUES (%s, %s, %s);
+
+select * from restaurant_Seodaemun;
+
+Create Table restaurant_Seodaemun(
 		id int AUTO_INCREMENT,
-        address varchar(30),
+        address varchar(30), 
         restaurantName varchar(20),
         restaurantCondition varchar(10),
 	
@@ -15,9 +24,7 @@ Create Table restaurant(
 
 show tables;
 
-select * from restaurant;
-
-Create Table Administrative_district(
+Create Table Gangnam(
 		id int auto_increment,
 		beopjeong varchar(10) Not Null,
         haengjeong varchar(10) Not Null,
@@ -25,7 +32,200 @@ Create Table Administrative_district(
 		primary key (id)
 		);
         
-insert into Administrative_district (beopjeong, haengjeong)
+Create Table Gangdong(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Gangbuk(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Gangseo(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Gwanak(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+        
+Create Table Gwangjin(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Guro(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Geumcheon(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Nowon(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Dobong(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Dongdaemun(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Dongjak(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Mapo(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Seodaemun(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Seocho(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Seongdong(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Seongbuk(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Songpa(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Yangcheon(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Yeongdeungpo(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Yongsan(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Eunpyeong(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Jongno(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+Create Table Jung(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+        
+Create Table Jungnang(
+		id int auto_increment,
+		beopjeong varchar(10) Not Null,
+        haengjeong varchar(10) Not Null,
+			
+		primary key (id)
+		);
+
+        
+insert into Seodaemun (beopjeong, haengjeong)
 values
 	("남가좌동", "남가좌1동"), ("남가좌동", "남가좌2동"),
 	("북가좌동", "북가좌1동"), ("북가좌동", "북가좌2동"),
@@ -39,4 +239,6 @@ values
 	("홍제동", "홍제1동"), ("홍제동", "홍제2동"), ("홍제동", "홍제3동");
 
     
-select * from Administrative_district;
+select * from Seodaemun;
+
+
