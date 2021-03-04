@@ -17,4 +17,6 @@ public class eAddress {
         Seongdong, Seongbuk, Songpa, Yangcheon, Yeongdeungpo,
         Yongsan, Eunpyeong, Jongno, Jung, Jungnang
     };
+
+
 }
