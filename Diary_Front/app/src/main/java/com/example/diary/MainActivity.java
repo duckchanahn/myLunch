@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         callRetrofit = new CallRetrofit();
         callRetrofit.callUserInfo("www");
+        callRetrofit.callPostUserInfo("rrrr");
 
     }
 }

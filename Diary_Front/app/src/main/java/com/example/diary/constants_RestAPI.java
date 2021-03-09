@@ -13,7 +13,7 @@ public interface constants_RestAPI {
     @GET("getTemp/{userId}")
     Call<userInfo> getUserInfo(@Path("userId") String userId);
 
-    @POST("getTemp/qqq")
-    Call<userInfo> postUserInfo(@Body userInfo userInfo);
+    @POST("postTemp/{userId}")
+    Call<userInfo> postUserInfo(@Path("userId") String userId);
 
 }

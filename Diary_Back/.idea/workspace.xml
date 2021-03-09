@@ -10,15 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01b2a618-5066-44e6-b4ec-19c205275851" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/CallRetrofit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/constants_RestAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/retrofitClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/userInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Front/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Front/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Front/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Front/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Front/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/homeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +191,8 @@
       <workItem from="1614692644837" duration="3392000" />
       <workItem from="1614744936228" duration="3415000" />
       <workItem from="1614832703243" duration="2288000" />
-      <workItem from="1615186836269" duration="1476000" />
+      <workItem from="1615186836269" duration="2079000" />
+      <workItem from="1615264382095" duration="2832000" />
     </task>
     <servers />
   </component>

@@ -35,4 +35,24 @@ public class homeController {
         return json;
     }
 
+    @RequestMapping(method = RequestMethod.POST, value = "/postTemp/{str}")
+    public Map tempPost(@PathVariable String str) {
+
+//        ModelAndView mv = new ModelAndView();
+//
+//        JSONObject json =  new JSONObject();
+
+        HashMap<String, String> json = new HashMap<>();
+
+        json.put("id", str);
+        json.put("pw", "sdasd");
+
+//        mv.addObject("result", json);
+//        mv.setViewName("/Ajax/jsonView");
+
+        System.out.println(str);
+
+        return json;
+    }
+
 }

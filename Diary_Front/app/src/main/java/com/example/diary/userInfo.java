@@ -1,13 +1,14 @@
 package com.example.diary;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class userInfo {
 
-    private String id;
-    private String  pw;
-
-    public userInfo(String id) {
-        this.id = id;
-    }
+    @SerializedName("id")
+    @Expose private String id;
+    @SerializedName("pw")
+    @Expose private String  pw;
 
     public String getId() {return id;}
     public void setId(String id) {this.id = id;}
