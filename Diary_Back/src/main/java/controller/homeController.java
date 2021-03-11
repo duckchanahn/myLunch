@@ -17,7 +17,7 @@ public class homeController {
     @Autowired
     private service.tempService tempService;
 
-    @RequestMapping(method = RequestMethod.GET, value = "/getTemp/{str}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.GET, value = "/gettemp/{str}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Map temp(@PathVariable String str) {
 
 //        ModelAndView mv = new ModelAndView();
@@ -35,24 +35,19 @@ public class homeController {
         return json;
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/postTemp/{str}")
-    public Map tempPost(@PathVariable String str) {
+    @RequestMapping(method = RequestMethod.POST, value = "/posttemp/{userInfo}")
+    public void tempPost(@PathVariable HashMap userInfo) {
 
 //        ModelAndView mv = new ModelAndView();
 //
 //        JSONObject json =  new JSONObject();
 
-        HashMap<String, String> json = new HashMap<>();
-
-        json.put("id", str);
-        json.put("pw", "sdasd");
-
 //        mv.addObject("result", json);
 //        mv.setViewName("/Ajax/jsonView");
 
-        System.out.println(str);
+        System.out.println(userInfo);
 
-        return json;
+//        return true;
     }
 
 }

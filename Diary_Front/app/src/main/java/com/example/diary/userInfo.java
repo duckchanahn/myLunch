@@ -5,10 +5,13 @@ import com.google.gson.annotations.SerializedName;
 
 public class userInfo {
 
-    @SerializedName("id")
-    @Expose private String id;
-    @SerializedName("pw")
-    @Expose private String  pw;
+//    @SerializedName("id")
+//    @Expose private String id;
+//    @SerializedName("pw")
+//    @Expose private String  pw;
+
+    private String id;
+    private String pw;
 
     public String getId() {return id;}
     public void setId(String id) {this.id = id;}

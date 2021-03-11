@@ -10,10 +10,10 @@ import retrofit2.http.Path;
 
 public interface constants_RestAPI {
 
-    @GET("getTemp/{userId}")
+    @GET("gettemp/{userId}")
     Call<userInfo> getUserInfo(@Path("userId") String userId);
 
-    @POST("postTemp/{userId}")
-    Call<userInfo> postUserInfo(@Path("userId") String userId);
+    @POST("posttemp/{userInfo}")
+    Call<userInfo> postUserInfo(@Path("userInfo") userInfo userInfo);
 
 }

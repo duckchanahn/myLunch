@@ -36,7 +36,11 @@ public class CallRetrofit {
 
     public boolean callPostUserInfo(String id){
 
-        Call<userInfo> call_post = retrofitClient.getApiService().postUserInfo(id);
+        userInfo userInfo = new userInfo();
+        userInfo.setId("qwq");
+        userInfo.setPw("qeq");
+
+        Call<userInfo> call_post = retrofitClient.getApiService().postUserInfo(userInfo);
         call_post.enqueue(new Callback<userInfo>() {
             @Override
             public void onResponse(Call<userInfo> call_post, Response<userInfo> response) {
