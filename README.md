@@ -1,6 +1,18 @@
-# Diary
+# <center>점심뭐먹지?</center>
 
-Spring mvc, REST API, Android studio, notion, git 연습
+***
+  JDK : 1.8 <br>
+  Tomcat : 8.5.63
+***
 
-오늘을 기록하고 내일을 만드는 앱
+### Petcares Web Service
 
+* Language: Java 
+
+* IDE: IntelliJ
+
+* Framework: Spring MVC, Mybatis
+
+* DBMS: MySQL(RDBMS)
+
+* Server: Amazon Web Service
