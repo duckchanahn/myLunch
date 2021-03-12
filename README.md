@@ -9,7 +9,7 @@
   Retrofit2 : 2.9.0
 ***
 
-### Petcares Web Service
+### 원하는 메뉴를(국물 or 볶음, 면 or 밥 등)  고르면 랜덤으로 주변 식당을 추천해주는 서비스
 
 * Language: Java, Python
 
