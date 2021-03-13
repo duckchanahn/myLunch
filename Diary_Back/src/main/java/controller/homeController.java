@@ -41,7 +41,7 @@ public class homeController {
 //        ModelAndView mv = new ModelAndView();
 //
 //        JSONObject json =  new JSONObject();
-
+            // 깃 이그노어 테스트
 //        mv.addObject("result", json);
 //        mv.setViewName("/Ajax/jsonView");
 
