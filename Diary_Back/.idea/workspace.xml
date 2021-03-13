@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01b2a618-5066-44e6-b4ec-19c205275851" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/config/Database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/controller/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/controller/homeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/homeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +205,7 @@
       <workItem from="1615264382095" duration="5586000" />
       <workItem from="1615453936565" duration="1943000" />
       <workItem from="1615544963749" duration="1145000" />
-      <workItem from="1615599362056" duration="6225000" />
+      <workItem from="1615599362056" duration="6681000" />
     </task>
     <servers />
   </component>
