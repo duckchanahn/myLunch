@@ -10,16 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01b2a618-5066-44e6-b4ec-19c205275851" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/config/Database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/config/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/controller/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/controller/homeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/homeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Diary_Back_war_exploded/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/homeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/CallRetrofit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/CallRetrofit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/constants_RestAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/constants_RestAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/userInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Front/app/src/main/java/com/example/diary/userInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Python/.ipynb_checkpoints/machineLearning_menu-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Python/.ipynb_checkpoints/machineLearning_menu-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Python/img_data.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Diary_Python/machineLearning_menu.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Python/machineLearning_menu.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/servlet-context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +68,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/spring-jdbc-5.2.3.RELEASE.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/config/config.properties" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.1150748" />
     <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
@@ -85,6 +85,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9909/" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
@@ -201,7 +212,9 @@
       <workItem from="1614832703243" duration="2288000" />
       <workItem from="1615186836269" duration="2079000" />
       <workItem from="1615264382095" duration="5586000" />
-      <workItem from="1615453936565" duration="729000" />
+      <workItem from="1615453936565" duration="1943000" />
+      <workItem from="1615544963749" duration="1145000" />
+      <workItem from="1615599362056" duration="6225000" />
     </task>
     <servers />
   </component>
