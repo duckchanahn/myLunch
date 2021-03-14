@@ -1,9 +1,10 @@
 package com.example.diary;
 
+import com.example.diary.dto.Location;
+import com.example.diary.dto.Restaurant;
+import com.example.diary.dto.UserInfo;
+
 import retrofit2.Call;
-import retrofit2.http.Body;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
@@ -11,9 +12,12 @@ import retrofit2.http.Path;
 public interface constants_RestAPI {
 
     @GET("gettemp/{userId}")
-    Call<userInfo> getUserInfo(@Path("userId") String userId);
+    Call<UserInfo> getUserInfo(@Path("userId") String userId);
 
     @POST("posttemp/{userInfo}")
-    Call<userInfo> postUserInfo(@Path("userInfo") userInfo userInfo);
+    Call<UserInfo> postUserInfo(@Path("userInfo") UserInfo userInfo);
+
+    @GET("getrestaurant")
+    Call<Restaurant> getRestaurant_location(@Path("location") String location);
 
 }

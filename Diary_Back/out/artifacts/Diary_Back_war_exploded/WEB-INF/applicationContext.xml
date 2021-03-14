@@ -6,10 +6,10 @@
     <beans>
         <!-- MySQL dataSource -->
         <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-            <property name="driverClassName" value="${spring.datasource.driverClassName}"/>
-            <property name="url" value="${spring.datasource.url}"/>
-            <property name="username" value="${spring.datasource.username}"/>
-            <property name="password" value="${spring.datasource.password}"/>
+            <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://db-sang-lunch.cdjhmqsvlizr.us-east-2.rds.amazonaws.com:3306/Diary?useSSL=false&amp;serverTimezone=UTC"/>
+            <property name="username" value="root"/>
+            <property name="password" value="kshyuk50318064!"/>
         </bean>
 
         <!-- mybatis SqlSessionFactoryBean -->

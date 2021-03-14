@@ -1,9 +1,9 @@
-package com.example.diary;
+package com.example.diary.dto;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class userInfo {
+public class UserInfo {
 
 //    @SerializedName("id")
 //    @Expose private String id;
