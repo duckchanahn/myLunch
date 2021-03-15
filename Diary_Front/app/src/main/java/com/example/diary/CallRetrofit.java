@@ -13,11 +13,42 @@ import retrofit2.Response;
 
 public class CallRetrofit {
 
-    public Restaurant callGetRestaurant_location(String location, TextView textView_resultRestaurant) {
+    private Restaurant restaurant;
 
-        Restaurant restaurant = new Restaurant();
+    public Restaurant callGetRestaurant_location(String location) { // 주소를 우편번호로 바꾸는 함수
 
-        Call<Restaurant> call = retrofitClient.getApiService().getRestaurant_location(location);
+        String zipcode = "";
+        restaurant = new Restaurant();
+
+        Call<String> call = retrofitClient.getApiService().getZipcode(location);
+        call.enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                if(!response.isSuccessful()){
+                    Log.e("연결이 비정상적 : ", "error code : " + response.code());
+                    return;
+                }
+                String zipcode = response.body().toString(); // 우편번호를 받음
+                restaurant = callGetRestaurant_zipcode(zipcode); // 우편번호로 음식점 추천
+
+            }
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+                Log.e("연결실패", t.getMessage());
+            }
+        });
+
+        return restaurant;
+
+    }
+
+    private Restaurant restaurant_temp;
+
+    public Restaurant callGetRestaurant_zipcode(String zipcode) { // 우편번호로 음식점 받아오는 함수
+
+        restaurant_temp = new Restaurant();
+
+        Call<Restaurant> call = retrofitClient.getApiService().getRestaurant(zipcode);
         call.enqueue(new Callback<Restaurant>() {
             @Override
             public void onResponse(Call<Restaurant> call, Response<Restaurant> response) {
@@ -25,7 +56,7 @@ public class CallRetrofit {
                     Log.e("연결이 비정상적 : ", "error code : " + response.code());
                     return;
                 }
-                Restaurant restaurant_response = response.body();
+                restaurant_temp = response.body();
                 Log.d("연결이 성공적 : ", response.body().toString());
 
             }
@@ -35,7 +66,7 @@ public class CallRetrofit {
             }
         });
 
-        return restaurant;
+        return restaurant_temp;
     }
 
     public boolean callUserInfo(String id){

@@ -51,26 +51,16 @@ public class MainActivity extends AppCompatActivity {
                 gpsTracker = new GpsTracker(MainActivity.this);
                 double latitude = gpsTracker.getLatitude(); // 위도
                 double longitude = gpsTracker.getLongitude(); //경도
-                Location userLocation = new Location();
+                String address = "";
 
                 try {
                     List<Address> location = geocoder.getFromLocation(latitude, longitude, 1);
                     if(!location.isEmpty())
                     {
 
-                        String district = location.get(0).getSubLocality();   // 구
+                        address = location.get(0).getAddressLine(0).toString(); // 국가명 시 군 구 동 번지
+                        textView_userLocation.setText(address);
 
-                        String haengjeong = location.get(0).getThoroughfare(); // 동
-
-                        String address = location.get(0).getAddressLine(0).toString(); // 국가명 시 군 구 동 번지
-
-                        userLocation.setDistrict(district);
-                        userLocation.setHaengjeong(haengjeong);
-                        userLocation.setAddress(address);
-
-                        Log.d("위치연결", address);
-
-                        textView_userLocation.setText(district + "\n" + haengjeong + "\n" + location);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -81,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 //                Log.d("위치연결", "위도" + latitude+ "경도" + longitude);
 
 
-                restaurant = callRetrofit.callGetRestaurant_location(userLocation.toString(), textView_resultRestaurant);
+                restaurant = callRetrofit.callGetRestaurant_location(address);
                 textView_resultRestaurant.setText(restaurant.toString());
             }
         });

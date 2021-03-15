@@ -1,5 +1,6 @@
 package controller;
 
+import dto.restaurant;
 import org.json.simple.JSONObject;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -18,12 +19,20 @@ public class homeController {
     @Autowired
     private service.tempService tempService;
 
-    @RequestMapping(method = RequestMethod.POST, value = "postuserlocation", produces = MediaType.APPLICATION_JSON_VALUE)
-    public int getUserLocation(@PathVariable HashMap location) {
 
-        System.out.println(location.get("address"));
+    @RequestMapping(method = RequestMethod.GET, value = "getrestaurant/{zipcode}")
+    public restaurant getRestaurant(@PathVariable String zipcode) {
 
-        return 0;
+        restaurant restaurant = new restaurant();
+
+        restaurant.setRestaurantName("이름");
+        restaurant.setAddress("주소");
+        restaurant.setId(0);
+        restaurant.setRestaurantCondition("주소");
+
+        System.out.println(zipcode);
+
+        return restaurant;
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/gettemp/{str}", produces = MediaType.APPLICATION_JSON_VALUE)
