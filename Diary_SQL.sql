@@ -15,6 +15,7 @@ Create Table restaurant_Seodaemun(
         address varchar(30), 
         restaurantName varchar(20),
         restaurantCondition varchar(10),
+        zipcode varchar(0) not null default '00000',
 	
         primary key(id)
 		);
@@ -51,4 +52,6 @@ FROM information_schema.tables;
 
 
 SELECT count(address) FROM restaurant_Seodaemun  WHERE address LIKE '%연희동%';
+
+alter table restaurant_Seodaemun add zipcode varchar(5) not null default '00000';
 

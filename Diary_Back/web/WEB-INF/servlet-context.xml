@@ -25,8 +25,14 @@
 
     <!-- Process annotations on registered beans like @Autowired... -->
     <context:annotation-config/>
+    <bean id="searchRestaurantService" class="service.searchRestaurantServiceimpl"/>
+    <bean id="crawlingZipCodeService" class="service.crawlingZipCodeServiceimpl"/>
+
+    <bean id="searchRestaurantDAO" class="dao.searchRestaurantDAOimpl"/>
+
     <bean id="tempService" class="service.tempServiceimpl"/>
     <bean id="tempDAO" class="dao.tempDAOimpl"/>
+
 
     <!-- 컴포넌트 스캔 -->
     <context:component-scan base-package="constants" />

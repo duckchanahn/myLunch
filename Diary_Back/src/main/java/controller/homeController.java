@@ -17,49 +17,21 @@ import java.util.Map;
 public class homeController {
 
     @Autowired
-    private service.tempService tempService;
+    private service.searchRestaurantService searchRestaurantService;
+    @Autowired
+    private service.crawlingZipCodeService crawlingZipCodeService;
 
 
     @RequestMapping(method = RequestMethod.GET, value = "getrestaurant/{zipcode}")
     public restaurant getRestaurant(@PathVariable String zipcode) {
 
-        restaurant restaurant = new restaurant();
-
-        restaurant.setRestaurantName("이름");
-        restaurant.setAddress("주소");
-        restaurant.setId(0);
-        restaurant.setRestaurantCondition("주소");
-
-        System.out.println(zipcode);
+        String address = crawlingZipCodeService.addressTozipCode(zipcode);
+        restaurant restaurant = searchRestaurantService.searchRestaurant_zipcode(address);
 
         return restaurant;
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/gettemp/{str}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Map temp(@PathVariable String str) {
+ //   @RequestMapping(method = RequestMethod.GET, value = "/gettemp/{str}", produces = MediaType.APPLICATION_JSON_VALUE)
 
-
-        HashMap<String, String> json = new HashMap<>();
-
-        json.put("id", str);
-        json.put("pw", "sdasd");
-
-        return json;
-    }
-
-    @RequestMapping(method = RequestMethod.POST, value = "/posttemp/{userInfo}")
-    public void tempPost(@PathVariable HashMap userInfo) {
-
-//        ModelAndView mv = new ModelAndView();
-//
-//        JSONObject json =  new JSONObject();
-            // 깃 이그노어 테스트
-//        mv.addObject("result", json);
-//        mv.setViewName("/Ajax/jsonView");
-
-        System.out.println(userInfo);
-
-//        return true;
-    }
 
 }

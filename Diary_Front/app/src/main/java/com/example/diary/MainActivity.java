@@ -67,17 +67,11 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("test", "입출력 오류 - 서버에서 주소변환시 에러발생");
                 }
 
-//                Log.d("버튼연결", "버튼눌림!!");
-//                Log.d("위치연결", "위도" + latitude+ "경도" + longitude);
-
-
-                restaurant = callRetrofit.callGetRestaurant_location(address);
+                restaurant = callRetrofit.callGetRestaurant(address);
                 textView_resultRestaurant.setText(restaurant.toString());
             }
         });
 
-        this.callRetrofit.callUserInfo("www");
-        this.callRetrofit.callPostUserInfo("rrrr");
 
     }
 

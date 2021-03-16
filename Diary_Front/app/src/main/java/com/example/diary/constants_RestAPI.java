@@ -11,14 +11,11 @@ import retrofit2.http.Path;
 
 public interface constants_RestAPI {
 
-    @GET("gettemp/{userId}")
-    Call<UserInfo> getUserInfo(@Path("userId") String userId);
-
-    @POST("posttemp/{userInfo}")
-    Call<UserInfo> postUserInfo(@Path("userInfo") UserInfo userInfo);
-
-    @GET("getzipcode/{location}")
-    Call<String> getZipcode(@Path("location") String location);
+//    @GET("gettemp/{userId}")
+//    Call<UserInfo> getUserInfo(@Path("userId") String userId);
+//
+//    @POST("posttemp/{userInfo}")
+//    Call<UserInfo> postUserInfo(@Path("userInfo") UserInfo userInfo);
 
     @GET("getrestaurant/{zipcode}")
     Call<Restaurant> getRestaurant(@Path("zipcode") String zipcode);
