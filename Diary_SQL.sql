@@ -55,3 +55,8 @@ SELECT count(address) FROM restaurant_Seodaemun  WHERE address LIKE '%연희동%
 
 alter table restaurant_Seodaemun add zipcode varchar(5) not null default '00000';
 
+SELECT COUNT(*) FROM restaurant_Seodaemun;
+
+SELECT address FROM restaurant_Seodaemun WHERE id = 3;
+
+UPDATE restaurant_Seodaemun SET zipcode = '11111' WHERE id = 3;
