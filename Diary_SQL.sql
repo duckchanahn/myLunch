@@ -4,11 +4,14 @@ drop table Administrative_district;
 
 rename Table restaurant to restaurant_Seodaemun;
 
+
+
 use myLunch;
 
 show tables;
 
 select * from restaurant_Seodaemun;
+DELETE FROM restaurant_Seodaemun WHERE 3316 <= id AND id <= 3321;
 
 Create Table restaurant_Seodaemun(
 		id int AUTO_INCREMENT,
