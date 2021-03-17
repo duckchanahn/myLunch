@@ -11,7 +11,10 @@ use myLunch;
 show tables;
 
 select * from restaurant_Seodaemun;
-DELETE FROM restaurant_Seodaemun WHERE 3316 <= id AND id <= 3321;
+
+select * from restaurant_Seodaemun WHERE address = "서울특별시 서대문구 홍제동 299";
+
+DELETE FROM restaurant_Seodaemun WHERE 7 = id ;
 
 Create Table restaurant_Seodaemun(
 		id int AUTO_INCREMENT,
@@ -54,7 +57,7 @@ SELECT SUM(data_length+index_length)/1024/1024 "USED_MB",
 FROM information_schema.tables;
 
 
-SELECT count(address) FROM restaurant_Seodaemun  WHERE address LIKE '%연희동%';
+SELECT * FROM restaurant_Seodaemun  WHERE address LIKE '%연희동%';
 
 alter table restaurant_Seodaemun add zipcode varchar(5) not null default '00000';
 
