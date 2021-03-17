@@ -12,7 +12,7 @@ show tables;
 
 select * from restaurant_Seodaemun;
 
-select * from restaurant_Seodaemun WHERE address = "서울특별시 서대문구 홍제동 299";
+select * from restaurant_Seodaemun WHERE zipcode = "00000";
 
 DELETE FROM restaurant_Seodaemun WHERE 7 = id ;
 
@@ -60,9 +60,10 @@ FROM information_schema.tables;
 SELECT * FROM restaurant_Seodaemun  WHERE address LIKE '%연희동%';
 
 alter table restaurant_Seodaemun add zipcode varchar(5) not null default '00000';
+alter table restaurant_Seodaemun add streetAddress varchar(30) not null default 'empty';
 
 SELECT COUNT(*) FROM restaurant_Seodaemun;
 
 SELECT address FROM restaurant_Seodaemun WHERE id = 3;
 
-UPDATE restaurant_Seodaemun SET zipcode = '11111' WHERE id = 3;
+UPDATE restaurant_Seodaemun SET address = '서울특별시 서대문구 냉천동 161-2번지' WHERE id = 8;
