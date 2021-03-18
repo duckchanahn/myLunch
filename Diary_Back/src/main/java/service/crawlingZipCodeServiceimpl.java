@@ -6,12 +6,12 @@ public class crawlingZipCodeServiceimpl implements crawlingZipCodeService{
 
         String zipcode = "";
 
-        zipcode = this.crawlingZipcode(address);
+        zipcode = this.getZipcode(address);
 
         return zipcode;
     }
 
-    private String crawlingZipcode(String address) {
+    private String getZipcode(String address) {
         String zipcode = "";
 
 

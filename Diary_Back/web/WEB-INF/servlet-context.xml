@@ -16,12 +16,12 @@
     <mvc:default-servlet-handler />
 
     <!-- config파일 자동 로드 location="classpath:database.properties"  /!-->
-    <context:property-placeholder location="/WEB-INF/config/*.properties" />
+    <context:property-placeholder location="/WEB-INF/config/config.properties" />
 
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="/WEB-INF/config/config.properties"/>
-        <property name="fileEncoding" value="UTF-8" />
-    </bean>
+<!--    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+<!--        <property name="location" value="/WEB-INF/config/config.properties"/>-->
+<!--        <property name="fileEncoding" value="UTF-8" />-->
+<!--    </bean>-->
 
     <!-- Process annotations on registered beans like @Autowired... -->
     <context:annotation-config/>
