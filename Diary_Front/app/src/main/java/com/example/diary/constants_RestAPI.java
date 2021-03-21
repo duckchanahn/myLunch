@@ -17,7 +17,7 @@ public interface constants_RestAPI {
 //    @POST("posttemp/{userInfo}")
 //    Call<UserInfo> postUserInfo(@Path("userInfo") UserInfo userInfo);
 
-    @GET("getrestaurant/{zipcode}")
-    Call<Restaurant> getRestaurant(@Path("zipcode") String zipcode);
+    @GET("getrestauranttoaddress/{address}")
+    Call<Restaurant> getRestaurant(@Path("address") String address);
 
 }

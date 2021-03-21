@@ -12,7 +12,7 @@ show tables;
 
 select * from restaurant_Seodaemun;
 
-select * from restaurant_Seodaemun WHERE zipcode = "00000";
+select count(*) from restaurant_Seodaemun WHERE zipcode = "00000";
 
 DELETE FROM restaurant_Seodaemun WHERE 7 = id ;
 

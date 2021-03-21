@@ -6,6 +6,7 @@
 
         <typeAlias alias="temp" type="dto.temp"/>
         <typeAlias alias="String" type="java.lang.String"/>
+        <typeAlias alias="restaurant" type="dto.restaurant"/>
 
     </typeAliases>
 

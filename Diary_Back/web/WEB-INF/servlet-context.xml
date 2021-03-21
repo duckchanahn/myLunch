@@ -17,6 +17,7 @@
 
     <!-- config파일 자동 로드 location="classpath:database.properties"  /!-->
     <context:property-placeholder location="/WEB-INF/config/config.properties" />
+<!--    <context:property-placeholder location="/WEB-INF/config/*.properties" />-->
 
 <!--    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
 <!--        <property name="location" value="/WEB-INF/config/config.properties"/>-->
@@ -27,6 +28,7 @@
     <context:annotation-config/>
     <bean id="searchRestaurantService" class="service.searchRestaurantServiceimpl"/>
     <bean id="crawlingZipCodeService" class="service.crawlingZipCodeServiceimpl"/>
+    <bean id="updateRestaurantService" class="service.updateRestaurantServiceimpl"/>
 
     <bean id="searchRestaurantDAO" class="dao.searchRestaurantDAOimpl"/>
 

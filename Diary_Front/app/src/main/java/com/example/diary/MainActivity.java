@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                     Log.e("test", "입출력 오류 - 서버에서 주소변환시 에러발생");
                 }
-
+                address = "대한민국 서울특별서 서대문구 남가좌2동 318-2";
                 restaurant = callRetrofit.callGetRestaurant(address);
                 textView_resultRestaurant.setText(restaurant.toString());
             }
