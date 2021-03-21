@@ -15,7 +15,7 @@ public class CallRetrofit {
 
     private Restaurant restaurant;
 
-    public Restaurant callGetRestaurant(String location) { // 주소를 우편번호로 바꾸는 함수
+    public Restaurant callGetRestaurant(String location, TextView textView_resultRestaurant) { // 주소를 우편번호로 바꾸는 함수
 
         restaurant = new Restaurant();
 
@@ -25,6 +25,8 @@ public class CallRetrofit {
             public void onResponse(Call<Restaurant> call, Response<Restaurant> response) {if(!response.isSuccessful()){Log.e("연결이 비정상적 : ", "error code : " + response.code());return;}
                 restaurant = response.body();
                 Log.d("연결이 성공적 : ", response.body().toString());
+                Log.d("연결후레스토랑정보", restaurant.toString());
+                textView_resultRestaurant.setText(restaurant.toString());
             }
             @Override public void onFailure(Call<Restaurant> call, Throwable t) {Log.e("연결실패", t.getMessage());}
         });

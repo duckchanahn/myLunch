@@ -20,6 +20,8 @@ public class searchRestaurantController {
 
         restaurant restaurant = searchRestaurantService.getRestaurant_searchTozipcode(address);
 
+        System.out.println(restaurant.toString());
+
         return restaurant;
     }
 

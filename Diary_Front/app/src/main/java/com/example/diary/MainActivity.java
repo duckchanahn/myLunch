@@ -53,22 +53,23 @@ public class MainActivity extends AppCompatActivity {
                 double longitude = gpsTracker.getLongitude(); //경도
                 String address = "";
 
-                try {
-                    List<Address> location = geocoder.getFromLocation(latitude, longitude, 1);
-                    if(!location.isEmpty())
-                    {
+//                try {
+//                    List<Address> location = geocoder.getFromLocation(latitude, longitude, 1);
+//                    if(!location.isEmpty())
+//                    {
+//
+//                        address = location.get(0).getAddressLine(0).toString(); // 국가명 시 군 구 동 번지
+//                        textView_userLocation.setText(address);
+//
+//                    }
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                    Log.e("test", "입출력 오류 - 서버에서 주소변환시 에러발생");
+//                }
+                address = "서대문구 거북골로 34";
+                restaurant = callRetrofit.callGetRestaurant(address, textView_resultRestaurant);
 
-                        address = location.get(0).getAddressLine(0).toString(); // 국가명 시 군 구 동 번지
-                        textView_userLocation.setText(address);
-
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    Log.e("test", "입출력 오류 - 서버에서 주소변환시 에러발생");
-                }
-                address = "대한민국 서울특별서 서대문구 남가좌2동 318-2";
-                restaurant = callRetrofit.callGetRestaurant(address);
-                textView_resultRestaurant.setText(restaurant.toString());
+//                textView_resultRestaurant.setText(restaurant.toString());
             }
         });
 
