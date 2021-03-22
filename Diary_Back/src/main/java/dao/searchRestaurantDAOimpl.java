@@ -1,7 +1,6 @@
 package dao;
 
 import dto.restaurant;
-import org.apache.ibatis.annotations.Param;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -15,19 +14,23 @@ public class searchRestaurantDAOimpl implements searchRestaurantDAO{
     @Autowired
     private SqlSessionTemplate sqlSession;
 
-    public restaurant getRestaurantTozipcode(String zipcode) {
 
-        // 서울 우편번호는 0으로 시작
-        String zipcodeMin = "0" +  Integer.toString(Integer.parseInt(zipcode) - 50);
-        String zipcodeMax = "0" +  Integer.toString(Integer.parseInt(zipcode) + 50);
+    public restaurant getRestaurantTozipcode(HashMap map) {
 
-        System.out.println(zipcodeMax + " " + zipcodeMin);
-
-        HashMap<String, String> map = new HashMap<>();
-        map.put("zipcodeMin", zipcodeMin);
-        map.put("zipcodeMax", zipcodeMax);
 
         return this.sqlSession.selectOne("mappers.restaurant.getRestaurantTozipcode", map);
+    }
+
+    @Override
+//    public List<restaurant> getRestaurantToname(String name) {
+    public List<restaurant> getRestaurantToname(String name) {
+        String likeName = "'%" + name + "%'";
+
+        System.out.println(likeName);
+
+        System.out.println(this.sqlSession.selectList("mappers.restaurant.getRestaurantToname", likeName).toString());
+
+        return this.sqlSession.selectList("mappers.restaurant.getRestaurantToname", likeName);
     }
 
 }

@@ -7,31 +7,38 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class searchRestaurantController {
 
     @Autowired
     private service.searchRestaurantService searchRestaurantService;
 
-    @RequestMapping(method = RequestMethod.GET, value = "getrestauranttoaddress/{address}")
+    @Autowired
+    private service.updateRestaurantService updateRestaurantService;
+
+    @RequestMapping(method = RequestMethod.GET, value = "addresses/{address}/restaurants")
     public restaurant getRestaurant_zipcode(@PathVariable String address) { // 주소 기준으로 기준 없이 랜덤
 
-        System.out.println(address);
-
         restaurant restaurant = searchRestaurantService.getRestaurant_searchTozipcode(address);
-
-        System.out.println(restaurant.toString());
 
         return restaurant;
     }
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "getrestauranttorestaurantname/{restaurantname}")
-    public restaurant getRestaurant_searchToName(@PathVariable String restaurantname) { // 주소 기준으로 기준 없이 랜덤
+    @RequestMapping(method = RequestMethod.GET, value = "names/{restaurantname}/restaurants")
+    public List<restaurant> getRestaurant_searchToName(@PathVariable String restaurantname) { // 주소 기준으로 기준 없이 랜덤
 
-        restaurant restaurant = searchRestaurantService.getRestaurant_searchToname(restaurantname);
+        List<restaurant> restaurant = searchRestaurantService.getRestaurant_searchToname(restaurantname);
 
         return restaurant;
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "restaurants/")
+    public restaurant postRestaurant_zipcode(@PathVariable String address) { // 새로운 음식점 추가가
+
+        return null;
     }
 
 }

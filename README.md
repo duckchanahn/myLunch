@@ -1,4 +1,6 @@
-# <center>점심뭐먹지?</center>
+# <center>점심뭐먹지?</center> <br>
+
+### 원하는 메뉴를(국물 or 볶음, 면 or 밥 등)  고르면 랜덤으로 주변 식당을 추천해주는 서비스 <br>
 
 ***
 <h3>개발환경</h3> 
@@ -17,13 +19,12 @@
   
 ***
 
-### 원하는 메뉴를(국물 or 볶음, 면 or 밥 등)  고르면 랜덤으로 주변 식당을 추천해주는 서비스
 
 * Language: Java, Python
 
-* IDE: IntelliJ, Anaconda
+* IDE: IntelliJ, Anaconda, Pycharm, Android Sturdio
 
-* Framework: Spring MVC, Mybatis
+* Framework: Spring MVC
 
 * DBMS: MySQL(RDBMS)
 

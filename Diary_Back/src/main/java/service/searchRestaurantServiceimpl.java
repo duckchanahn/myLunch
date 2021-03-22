@@ -10,6 +10,9 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.HashMap;
+import java.util.List;
+
 public class searchRestaurantServiceimpl implements searchRestaurantService{
 
     @Value("${juso.api.confmKey}")
@@ -25,27 +28,35 @@ public class searchRestaurantServiceimpl implements searchRestaurantService{
 
         String zipcode = this.addressTozipCode(address);
 
-        return this.searchRestaurantDAO.getRestaurantTozipcode(zipcode);
+        // 서울 우편번호는 0으로 시작
+        String zipcodeMin = "0" +  Integer.toString(Integer.parseInt(zipcode) - 50);
+        String zipcodeMax = "0" +  Integer.toString(Integer.parseInt(zipcode) + 50);
+
+        System.out.println(zipcodeMax + " " + zipcodeMin);
+
+        HashMap<String, String> map = new HashMap<>();
+        map.put("zipcodeMin", zipcodeMin);
+        map.put("zipcodeMax", zipcodeMax);
+
+        return this.searchRestaurantDAO.getRestaurantTozipcode(map);
 //        return restaurant;
     }
 
     @Override
-    public restaurant getRestaurant_searchToname(String address) {
+    public List<restaurant> getRestaurant_searchToname(String restaurantName) {
 
-        restaurant restaurant = new restaurant();
-
-        return restaurant;
+        return this.searchRestaurantDAO.getRestaurantToname(restaurantName);
     }
 
     @Override
-    public restaurant getRestaurant_searchToinfo(String address) {
+    public restaurant getRestaurant_searchToinfo(HashMap restaurantInfo) {
 
         restaurant restaurant = new restaurant();
 
         return restaurant;
     }
 
-    private String addressTozipCode(String address) {
+    private String addressTozipCode(String address) { // juso.go.kr api를 활용하여 우편번호 받아오기
         MultiValueMap<String, Object> params = new LinkedMultiValueMap<>();
         params.add("confmKey", confmKey);
         params.add("currentPage", 1);

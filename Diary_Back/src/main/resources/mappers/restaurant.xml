@@ -8,4 +8,7 @@
             select * from restaurant_Seodaemun WHERE #{zipcodeMin} <![CDATA[<]]> zipcode AND zipcode <![CDATA[<]]> #{zipcodeMax} order by rand() limit 1;
     </select>
 
+    <select id="mappers.restaurant.getRestaurantToname" resultType="java.util.List" parameterType="java.lang.String">
+        SELECT * FROM restaurant_Seodaemun  WHERE restaurantName LIKE #{value};
+    </select>
 </mapper>
