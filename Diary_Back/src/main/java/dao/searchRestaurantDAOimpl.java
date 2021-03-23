@@ -15,22 +15,20 @@ public class searchRestaurantDAOimpl implements searchRestaurantDAO{
     private SqlSessionTemplate sqlSession;
 
 
-    public restaurant getRestaurantTozipcode(HashMap map) {
-
-
-        return this.sqlSession.selectOne("mappers.restaurant.getRestaurantTozipcode", map);
+    public restaurant getRestaurant_searchTozipcode(HashMap map) {
+        return this.sqlSession.selectOne("mappers.restaurant.getRestaurant_searchTozipcode", map);
     }
 
     @Override
-//    public List<restaurant> getRestaurantToname(String name) {
-    public List<restaurant> getRestaurantToname(String name) {
-        String likeName = "'%" + name + "%'";
-
-        System.out.println(likeName);
-
-        System.out.println(this.sqlSession.selectList("mappers.restaurant.getRestaurantToname", likeName).toString());
-
-        return this.sqlSession.selectList("mappers.restaurant.getRestaurantToname", likeName);
+    public List<restaurant> getRestaurant_searchTorestaurantName(String restaurantName) {
+        return this.sqlSession.selectList("mappers.restaurant.getRestaurant_searchTorestaurantName", restaurantName);
     }
+
+    @Override
+    public List<restaurant> getRestaurant_searchToaddressName(String addressName) {
+        return this.sqlSession.selectList("mappers.restaurant.getRestaurant_searchToaddressName", addressName);
+    }
+
+
 
 }

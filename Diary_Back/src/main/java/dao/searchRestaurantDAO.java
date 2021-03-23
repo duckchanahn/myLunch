@@ -7,10 +7,10 @@ import java.util.List;
 
 public interface searchRestaurantDAO {
 
-    public restaurant getRestaurantTozipcode(HashMap map);
+    public restaurant getRestaurant_searchTozipcode(HashMap map);
 
-    public List<restaurant> getRestaurantToname(String name);
+    public List<restaurant> getRestaurant_searchTorestaurantName(String restaurantName);
 
-
+    public List<restaurant> getRestaurant_searchToaddressName(String addressName);
 
 }

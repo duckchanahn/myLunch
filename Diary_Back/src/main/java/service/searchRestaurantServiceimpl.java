@@ -38,14 +38,24 @@ public class searchRestaurantServiceimpl implements searchRestaurantService{
         map.put("zipcodeMin", zipcodeMin);
         map.put("zipcodeMax", zipcodeMax);
 
-        return this.searchRestaurantDAO.getRestaurantTozipcode(map);
+        return this.searchRestaurantDAO.getRestaurant_searchTozipcode(map);
 //        return restaurant;
     }
 
     @Override
-    public List<restaurant> getRestaurant_searchToname(String restaurantName) {
+    public List<restaurant> getRestaurant_searchTorestaurantName(String restaurantName) {
 
-        return this.searchRestaurantDAO.getRestaurantToname(restaurantName);
+        restaurantName = "%" + restaurantName + "%";
+
+        return this.searchRestaurantDAO.getRestaurant_searchTorestaurantName(restaurantName);
+    }
+
+    @Override
+    public List<restaurant> getRestaurant_searchToaddressName(String addressName) {
+
+        addressName = "%" + addressName + "%";
+
+        return this.searchRestaurantDAO.getRestaurant_searchToaddressName(addressName);
     }
 
     @Override
