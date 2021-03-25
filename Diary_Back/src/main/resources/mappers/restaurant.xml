@@ -5,15 +5,15 @@
 
 <mapper namespace="mappers.restaurant">
     <select id="getRestaurant_searchTozipcode" resultType="restaurant" parameterType="java.util.HashMap">
-            select * from restaurant_Seodaemun WHERE #{zipcodeMin} <![CDATA[<]]> zipcode AND zipcode <![CDATA[<]]> #{zipcodeMax} order by rand() limit 1;
+            select * from restaurant_Seodaemun WHERE #{zipcodeMin} <![CDATA[<]]> restaurant_zipcode AND restaurant_zipcode <![CDATA[<]]> #{zipcodeMax} order by rand() limit 1;
     </select>
 
     <select id="getRestaurant_searchTorestaurantName" resultType="restaurant" parameterType="java.lang.String">
-        select * from restaurant_Seodaemun  WHERE restaurantName LIKE #{restaurantName};
+        select * from restaurant_Seodaemun  WHERE restaurant_name LIKE #{restaurantName};
     </select>
 
     <select id="getRestaurant_searchToaddressName" resultType="restaurant" parameterType="java.lang.String">
-        select * from restaurant_Seodaemun  WHERE address LIKE #{addressName};
+        select * from restaurant_Seodaemun  WHERE restaurant_address LIKE #{addressName};
     </select>
 
 </mapper>

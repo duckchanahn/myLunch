@@ -28,12 +28,22 @@
 
     <!-- Process annotations on registered beans like @Autowired... -->
     <context:annotation-config/>
+    <!--    restaurantController-->
     <bean id="searchRestaurantService" class="service.searchRestaurantServiceimpl"/>
-    <bean id="crawlingZipCodeService" class="service.crawlingZipCodeServiceimpl"/>
     <bean id="updateRestaurantService" class="service.updateRestaurantServiceimpl"/>
-
     <bean id="searchRestaurantDAO" class="dao.searchRestaurantDAOimpl"/>
+    <bean id="updateRestaurantDAO" class="dao.updateRestaurantDAOimpl"/>
 
+    <!--    cookingController-->
+    <bean id="searchRecipeService" class="service.searchRecipeServiceimpl"/>
+    <bean id="updateRecipeService" class="service.updateRecipeServiceimpl"/>
+    <bean id="reviewRecipeService" class="service.reviewRecipeServiceimpl"/>
+    <bean id="searchRecipeDAO" class="service.searchRecipeDAOimpl"/>
+    <bean id="updateRecipeDAO" class="service.updateRecipeDAOimpl"/>
+    <bean id="reviewRecipeDAO" class="service.reviewRecipeDAOimpl"/>
+
+
+    <!--    temp-->
     <bean id="tempService" class="service.tempServiceimpl"/>
     <bean id="tempDAO" class="dao.tempDAOimpl"/>
 

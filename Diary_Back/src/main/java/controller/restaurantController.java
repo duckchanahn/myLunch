@@ -25,19 +25,23 @@ public class restaurantController {
 
 
     @RequestMapping(method = RequestMethod.GET, value = "restaurants/name/{restaurantname}/restaurants")
-    public List<restaurant> getRestaurantTorestaurantName(@PathVariable String restaurantname) { // 주소 기준으로 기준 없이 랜덤
+    public List<restaurant> getRestaurant_restaurantName(@PathVariable String restaurantname) { // 주소 기준으로 기준 없이 랜덤
         return searchRestaurantService.getRestaurant_searchTorestaurantName(restaurantname);
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "address/{address}/restaurants")
-    public List<restaurant> getRestaurantToaddressName(@PathVariable String address) { // 주소 기준으로 기준 없이 랜덤
+    public List<restaurant> getRestaurant_addressName(@PathVariable String address) { // 주소 기준으로 기준 없이 랜덤
         return searchRestaurantService.getRestaurant_searchToaddressName(address);
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "restaurants/")
-    public restaurant postRestaurant_zipcode(@PathVariable String address) { // 새로운 음식점 추가가
+    @RequestMapping(method = RequestMethod.POST, value = "restaurants/{restaurant}")
+    public restaurant postRestaurant(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
+        return updateRestaurantService.postRestaurant(restaurant);
+    }
 
-        return null;
+    @RequestMapping(method = RequestMethod.PUT, value = "restaurants/{restaurant}")
+    public restaurant putRestaurant(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
+        return updateRestaurantService.putRestaurant(restaurant);
     }
 
 }

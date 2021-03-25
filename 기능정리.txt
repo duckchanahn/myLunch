@@ -1,4 +1,4 @@
-### 음식점 기능 --> restaurantController
+### 1. 음식점 기능 --> restaurantController
 
 ** 음식점 검색 --> searchRestaurant **
 
@@ -8,30 +8,34 @@
 	2-2. 지역이름으로 검색 (강남, 노원 등)
 	2-2. 특성(주소, 메뉴, 이름, 키워드)로 검색
 3. 리뷰
+	3-1. 음식점 리뷰 CRUD
 
 ** 음식점 업데이트 --> updateRestaurant **
 
-1. 음식점 추가
-2. 음식점 정보 수정
+1. 음식점 CRUD
 
-### 사용자 기능 --> userController
+### 2. 사용자 기능 --> userController
 
-1. 내 리뷰 보기
-2. 내 레시피 보기
-3. 내 검색내역 보기
+1. 내 리뷰 CRUD
+2. 내 레시피 CRUD
+3. 내 검색내역 RD
 
-### 요리 기능 --> cookingController
+### 3. 요리 기능 --> cookingController
 
 ** 레시피 검색 --> searchRecipe **
 
 1. 재료 입력하면 재료로 가능한 레시피 검색
 2. 메뉴 이름 입력하면 레시피 검색
 3. 레시피 키워드로 레시피 검색
-4. 리뷰
 
-** 레시피 등록 --> postRecipe**
 
-1. 레시피 등록
+** 레시피 등록 --> updateRecipe**
+
+1. 레시피 CRUD
+
+** 레시피 리뷰 --> reviewRecipe**
+
+1. 레시피에 대한 리뷰 CRUD
 
 ** 추가해야할 기능 **
 
