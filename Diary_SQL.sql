@@ -1,8 +1,8 @@
 Create Database myLunch;
-drop table restaurant_Seodaemun;
+drop table restaurant_seodaemun;
 drop table Administrative_district;
 
-rename Table restaurant to restaurant_Seodaemun;
+rename Table restaurant to restaurant_seodaemun;
 
 
 
@@ -10,17 +10,61 @@ use myLunch;
 
 show tables;
 
-select * from restaurant_Seodaemun;
+select * from restaurant_seodaemun;
 
-select count(*) from restaurant_Seodaemun WHERE zipcode = "00000";
+select count(*) from restaurant_seodaemun WHERE zipcode = "00000";
 
-DELETE FROM restaurant_Seodaemun WHERE 7 = id ;
+DELETE FROM restaurant_seodaemun WHERE 7 = id ;
 
-Create Table restaurant_Seodaemun(
+Create Table restaurant_seodaemun(
 		id int AUTO_INCREMENT,
-        address varchar(30), 
-        restaurantName varchar(20),
-        restaurantCondition varchar(10),
+        restaurant_address varchar(30), 
+        restaurant_name varchar(20),
+        restaurant_condition varchar(10),
+        zipcode varchar(0) not null default '00000',
+	
+        primary key(id)
+		);
+        
+Create Table request_post_restaurant(
+		id int AUTO_INCREMENT,
+        restaurant_address varchar(30), 
+        restaurant_name varchar(20),
+        restaurant_condition varchar(10),
+	
+        primary key(id)
+		);
+        
+Create Table request_put_restaurant(
+		id int AUTO_INCREMENT,
+        restaurant_id varchar(5),
+        restaurant_address varchar(30), 
+        restaurant_name varchar(20),
+        restaurant_condition varchar(10),
+        zipcode varchar(0) not null default '00000',
+	
+        primary key(id)
+		);
+        
+alter table restaurant_seodaemun change address restaurant_address varchar(30);
+alter table restaurant_seodaemun change restaurantName restaurant_name varchar(20);
+alter table restaurant_seodaemun change restaurantCondition restaurant_condition varchar(10);
+alter table restaurant_seodaemun change zipcode restaurant_zipcode varchar(5);
+alter table restaurant_seodaemun change streetAddress restaurant_street_address varchar(30);
+
+alter table restaurant_seodaemun modify restaurant_address varchar(30);
+alter table restaurant_seodaemun modify restaurant_condition varchar(10);
+alter table restaurant_seodaemun modify restaurant_condition varchar(10);
+        
+DESC restaurant_seodaemun;
+
+select * from restaurant_seodaemun;
+        
+Create Table restaurant_seodaemun(
+		id varchar(10) not null,
+        user_name varchar(30), 
+        restaurant_name varchar(20),
+        restaurant_condition varchar(10),
         zipcode varchar(0) not null default '00000',
 	
         primary key(id)
@@ -57,13 +101,19 @@ SELECT SUM(data_length+index_length)/1024/1024 "USED_MB",
 FROM information_schema.tables;
 
 
-SELECT * FROM restaurant_Seodaemun  WHERE address LIKE '%연희동%';
+SELECT * FROM restaurant_seodaemun  WHERE restaurantName LIKE "%족발%";
+SELECT * FROM restaurant_seodaemun  WHERE restaurantName LIKE '%족발%';
+SELECT * FROM tableName  WHERE columnName LIKE '%keyword%';
 
-alter table restaurant_Seodaemun add zipcode varchar(5) not null default '00000';
-alter table restaurant_Seodaemun add streetAddress varchar(30) not null default 'empty';
+alter table restaurant_seodaemun add zipcode varchar(5) not null default '00000';
+alter table restaurant_seodaemun add streetAddress varchar(30) not null default 'empty';
 
-SELECT COUNT(*) FROM restaurant_Seodaemun;
+SELECT COUNT(*) FROM restaurant_seodaemun;
 
-SELECT address FROM restaurant_Seodaemun WHERE id = 3;
+SELECT address FROM restaurant_seodaemun WHERE id = 3;
 
-UPDATE restaurant_Seodaemun SET address = '서울특별시 서대문구 냉천동 161-2번지' WHERE id = 8;
+UPDATE restaurant_seodaemun SET address = '서울특별시 서대문구 냉천동 161-2번지' WHERE id = 8;
+
+select * from restaurant_seodaemun WHERE 03700 <= zipcode AND zipcode <= 03800 order by rand() limit 1;
+
+select * from restaurant_seodaemun WHERE zipcode = 03624 order by rand() limit 1;

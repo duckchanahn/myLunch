@@ -13,9 +13,6 @@ public class homeController {
 
     @RequestMapping(value = "/")
     public String home() {
-
-//        tempService.showCustomerName();
-
         return "index";
     }
 

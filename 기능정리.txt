@@ -12,7 +12,7 @@
 
 ** 음식점 업데이트 --> updateRestaurant **
 
-1. 음식점 CRUD
+1. 음식점 CUD
 
 ### 2. 사용자 기능 --> userController
 
@@ -24,18 +24,18 @@
 
 ** 레시피 검색 --> searchRecipe **
 
-1. 재료 입력하면 재료로 가능한 레시피 검색
-2. 메뉴 이름 입력하면 레시피 검색
-3. 레시피 키워드로 레시피 검색
+1. 재료 입력하면 재료로 가능한 레시피 검색 --> recipes/ingredients/{ingredients}
+2. 메뉴 이름 입력하면 레시피 검색 --> recipes/name/{name}
+3. 레시피 키워드로 레시피 검색 --> recipes/keyword/{keyword}
 
 
 ** 레시피 등록 --> updateRecipe**
 
-1. 레시피 CRUD
+1. 레시피 CUD recipes/{recipes}
 
 ** 레시피 리뷰 --> reviewRecipe**
 
-1. 레시피에 대한 리뷰 CRUD
+1. 레시피에 대한 리뷰 CRUD recipes/review/{review}
 
 ** 추가해야할 기능 **
 
@@ -43,4 +43,7 @@
 2. 키워드 만들기 (혼밥, 분위기 등)
 3. 사용자 기능
 4. 레시피 기능
- 
+
+
+
+

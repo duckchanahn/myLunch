@@ -16,17 +16,17 @@ public class searchRestaurantDAOimpl implements searchRestaurantDAO{
 
 
     public restaurant getRestaurant_searchTozipcode(HashMap map) {
-        return this.sqlSession.selectOne("mappers.restaurant.getRestaurant_searchTozipcode", map);
+        return this.sqlSession.selectOne("mappers.searchRestaurant.getRestaurant_searchTozipcode", map);
     }
 
     @Override
     public List<restaurant> getRestaurant_searchTorestaurantName(String restaurantName) {
-        return this.sqlSession.selectList("mappers.restaurant.getRestaurant_searchTorestaurantName", restaurantName);
+        return this.sqlSession.selectList("mappers.searchRestaurant.getRestaurant_searchTorestaurantName", restaurantName);
     }
 
     @Override
     public List<restaurant> getRestaurant_searchToaddressName(String addressName) {
-        return this.sqlSession.selectList("mappers.restaurant.getRestaurant_searchToaddressName", addressName);
+        return this.sqlSession.selectList("mappers.searchRestaurant.getRestaurant_searchToaddressName", addressName);
     }
 
 

@@ -34,6 +34,8 @@
     <bean id="searchRestaurantDAO" class="dao.searchRestaurantDAOimpl"/>
     <bean id="updateRestaurantDAO" class="dao.updateRestaurantDAOimpl"/>
 
+    <bean id="zipcodeService" class="service.zipcodeService"/>
+
     <!--    cookingController-->
     <bean id="searchRecipeService" class="service.searchRecipeServiceimpl"/>
     <bean id="updateRecipeService" class="service.updateRecipeServiceimpl"/>

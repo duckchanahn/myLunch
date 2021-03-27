@@ -18,9 +18,15 @@ public class restaurantController {
     @Autowired
     private service.updateRestaurantService updateRestaurantService;
 
+    @Autowired
+    private service.zipcodeService zipcodeService;
+
     @RequestMapping(method = RequestMethod.GET, value = "user/address/{address}/restaurant/recommend")
     public restaurant getRestaurant_zipcode(@PathVariable String address) { // 주소 기준으로 기준 없이 랜덤
-        return searchRestaurantService.getRestaurant_searchTozipcode(address);
+
+        String zipcode = this.zipcodeService.addressTozipCode(address);
+
+        return searchRestaurantService.getRestaurant_searchTozipcode(zipcode);
     }
 
 
@@ -34,13 +40,27 @@ public class restaurantController {
         return searchRestaurantService.getRestaurant_searchToaddressName(address);
     }
 
+    @RequestMapping(method = RequestMethod.POST, value = "restaurants/{restaurant}/requests")
+    public int postRestaurant_request(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
+        return updateRestaurantService.postRestaurant_request(restaurant);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT, value = "restaurants/{restaurant}/requests")
+    public int putRestaurant_request(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
+        return updateRestaurantService.putRestaurant_request(restaurant);
+    }
+
     @RequestMapping(method = RequestMethod.POST, value = "restaurants/{restaurant}")
-    public restaurant postRestaurant(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
+    public int postRestaurant(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
+        String zipcode = this.zipcodeService.addressTozipCode(restaurant.getAddress());
+
+        restaurant.setZipcode(zipcode);
+
         return updateRestaurantService.postRestaurant(restaurant);
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "restaurants/{restaurant}")
-    public restaurant putRestaurant(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
+    public int putRestaurant(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
         return updateRestaurantService.putRestaurant(restaurant);
     }
 
