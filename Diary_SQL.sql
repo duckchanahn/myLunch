@@ -26,22 +26,24 @@ Create Table restaurant_seodaemun(
         primary key(id)
 		);
         
+        
+        
 Create Table request_post_restaurant(
 		id int AUTO_INCREMENT,
         restaurant_address varchar(30), 
         restaurant_name varchar(20),
         restaurant_condition varchar(10),
+        explanation varchar(100),
 	
         primary key(id)
 		);
         
 Create Table request_put_restaurant(
 		id int AUTO_INCREMENT,
-        restaurant_id varchar(5),
         restaurant_address varchar(30), 
         restaurant_name varchar(20),
         restaurant_condition varchar(10),
-        zipcode varchar(0) not null default '00000',
+        explanation varchar(100),
 	
         primary key(id)
 		);
@@ -55,10 +57,17 @@ alter table restaurant_seodaemun change streetAddress restaurant_street_address 
 alter table restaurant_seodaemun modify restaurant_address varchar(30);
 alter table restaurant_seodaemun modify restaurant_condition varchar(10);
 alter table restaurant_seodaemun modify restaurant_condition varchar(10);
+
+alter table request_post_restaurant add explanation varchar(100);
+alter table request_put_restaurant add explanation varchar(100);
         
 DESC restaurant_seodaemun;
+DESC request_post_restaurant;
+DESC request_put_restaurant;
 
 select * from restaurant_seodaemun;
+
+RENAME TABLE restaurant_Seodaemun TO restaurant_seodaemun;
         
 Create Table restaurant_seodaemun(
 		id varchar(10) not null,

@@ -40,9 +40,9 @@
     <bean id="searchRecipeService" class="service.searchRecipeServiceimpl"/>
     <bean id="updateRecipeService" class="service.updateRecipeServiceimpl"/>
     <bean id="reviewRecipeService" class="service.reviewRecipeServiceimpl"/>
-    <bean id="searchRecipeDAO" class="service.searchRecipeDAOimpl"/>
-    <bean id="updateRecipeDAO" class="service.updateRecipeDAOimpl"/>
-    <bean id="reviewRecipeDAO" class="service.reviewRecipeDAOimpl"/>
+    <bean id="searchRecipeDAO" class="dao.searchRecipeDAOimpl"/>
+    <bean id="updateRecipeDAO" class="dao.updateRecipeDAOimpl"/>
+    <bean id="reviewRecipeDAO" class="dao.reviewRecipeDAOimpl"/>
 
 
     <!--    temp-->
