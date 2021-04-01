@@ -19,7 +19,7 @@ public class CallRetrofit {
 
         restaurant = new Restaurant();
 
-        Call<Restaurant> call = retrofitClient.getApiService().getRestaurant(location);
+        Call<Restaurant> call = retrofitClient.getApiService().getRestaurant_zipcode(location);
         call.enqueue(new Callback<Restaurant>() {
             @Override
             public void onResponse(Call<Restaurant> call, Response<Restaurant> response) {if(!response.isSuccessful()){Log.e("연결이 비정상적 : ", "error code : " + response.code());return;}
