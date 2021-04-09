@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="myLunch:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c668ce53-9670-468e-b1fd-7027718779c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Diary_Back/.idea/artifacts/Diary_Back_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Diary_Back/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Diary_Back/log4j-1.2.17.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Maven__org_springframework_spring_tx_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/libraries/log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/Diary_Back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/Diary_Back.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/controller/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/controller/homeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/dao/searchRestaurantDAOimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/dao/searchRestaurantDAOimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/dto/restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/dto/restaurant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/mappers/restaurant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/mappers/restaurant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/service/searchRestaurantServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/service/searchRestaurantServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/service/updateRestaurantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/service/updateRestaurantService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/service/updateRestaurantServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/classes/service/updateRestaurantServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/out/artifacts/Diary_Back_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/constants/eAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/constants/eAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/constants/eDistrict.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/constants/eDistrict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/controller/cookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/controller/cookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/controller/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/controller/homeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/controller/restaurantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/controller/restaurantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/controller/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/reviewRecipeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/reviewRecipeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/reviewRecipeDAOimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/reviewRecipeDAOimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/searchRecipeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/searchRecipeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/searchRecipeDAOimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/searchRecipeDAOimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/searchRestaurantDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/searchRestaurantDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/searchRestaurantDAOimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/searchRestaurantDAOimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/tempDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/tempDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/tempDAOimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/tempDAOimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/updateRecipeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/updateRecipeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/updateRecipeDAOimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/updateRecipeDAOimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/updateRestaurantDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/updateRestaurantDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/updateRestaurantDAOimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dao/updateRestaurantDAOimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dto/recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dto/recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dto/restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dto/restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dto/reviewRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dto/reviewRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/dto/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/dto/temp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/crawlingZipCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/crawlingZipCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/crawlingZipCodeServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/crawlingZipCodeServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/reviewRecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/reviewRecipeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/reviewRecipeServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/reviewRecipeServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/searchRecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/searchRecipeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/searchRecipeServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/searchRecipeServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/searchRestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/searchRestaurantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/searchRestaurantServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/searchRestaurantServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/tempService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/tempService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/tempServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/tempServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/updateRecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/updateRecipeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/updateRecipeServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/updateRecipeServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/updateRestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/updateRestaurantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/updateRestaurantServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/updateRestaurantServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/zipcodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/java/service/zipcodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/resources/mappers/searchRestaurant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/resources/mappers/searchRestaurant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/resources/mappers/tempCustomer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/resources/mappers/tempCustomer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/resources/mappers/updateRestaurant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/resources/mappers/updateRestaurant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/src/main/resources/mybatis-configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/src/main/resources/mybatis-configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/controller/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/target/classes/controller/homeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/controller/searchRestaurantController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/dao/searchRestaurantDAOimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/target/classes/dao/searchRestaurantDAOimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/dto/restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/target/classes/dto/restaurant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/mappers/restaurant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/mybatis-configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/target/classes/mybatis-configuration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/service/searchRestaurantServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/target/classes/service/searchRestaurantServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/service/updateRestaurantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/target/classes/service/updateRestaurantService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/target/classes/service/updateRestaurantServiceimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/target/classes/service/updateRestaurantServiceimpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Diary_Back/web/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1qk1tN2IzeGg0uqXDbMWWQWUZIx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9909/myLunch_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="myLunch:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/myLunch_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="b58c67d4-5167-47dc-926f-0296ce818a7d" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="12282" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="myLunch:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c668ce53-9670-468e-b1fd-7027718779c6" name="Default Changelist" comment="" />
+      <created>1617608989569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617608989569</updated>
+      <workItem from="1617608991119" duration="527000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

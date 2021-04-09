@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mappers.searchRestaurant">
+    <select id="getRestaurant_searchTozipcode" resultType="restaurant" parameterType="java.util.HashMap">
+            select * from restaurant_seodaemun WHERE #{zipcodeMin} <![CDATA[<]]> restaurant_zipcode AND restaurant_zipcode <![CDATA[<]]> #{zipcodeMax} order by rand() limit 1;
+    </select>
+
+    <select id="getRestaurant_searchTorestaurantName" resultType="restaurant" parameterType="java.lang.String">
+        select * from restaurant_seodaemun  WHERE restaurant_name LIKE #{restaurantName};
+    </select>
+
+    <select id="getRestaurant_searchToaddressName" resultType="restaurant" parameterType="java.lang.String">
+        select * from restaurant_seodaemun  WHERE restaurant_address LIKE #{addressName};
+    </select>
+
+</mapper>

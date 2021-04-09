@@ -12,6 +12,8 @@
     </typeAliases>
 
     <mappers>
-
+        <mapper resource="mappers/searchRestaurant.xml" />
+        <mapper resource="mappers/tempCustomer.xml" />
+        <mapper resource="mappers/updateRestaurant.xml" />
     </mappers>
 </configuration>

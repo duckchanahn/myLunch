@@ -28,12 +28,24 @@
 
     <!-- Process annotations on registered beans like @Autowired... -->
     <context:annotation-config/>
+    <!--    restaurantController-->
     <bean id="searchRestaurantService" class="service.searchRestaurantServiceimpl"/>
-    <bean id="crawlingZipCodeService" class="service.crawlingZipCodeServiceimpl"/>
     <bean id="updateRestaurantService" class="service.updateRestaurantServiceimpl"/>
-
     <bean id="searchRestaurantDAO" class="dao.searchRestaurantDAOimpl"/>
+    <bean id="updateRestaurantDAO" class="dao.updateRestaurantDAOimpl"/>
 
+    <bean id="zipcodeService" class="service.zipcodeService"/>
+
+    <!--    cookingController-->
+    <bean id="searchRecipeService" class="service.searchRecipeServiceimpl"/>
+    <bean id="updateRecipeService" class="service.updateRecipeServiceimpl"/>
+    <bean id="reviewRecipeService" class="service.reviewRecipeServiceimpl"/>
+    <bean id="searchRecipeDAO" class="dao.searchRecipeDAOimpl"/>
+    <bean id="updateRecipeDAO" class="dao.updateRecipeDAOimpl"/>
+    <bean id="reviewRecipeDAO" class="dao.reviewRecipeDAOimpl"/>
+
+
+    <!--    temp-->
     <bean id="tempService" class="service.tempServiceimpl"/>
     <bean id="tempDAO" class="dao.tempDAOimpl"/>
 
@@ -43,8 +55,8 @@
     <context:component-scan base-package="controller" />
     <context:component-scan base-package="dao" />
     <context:component-scan base-package="dto" />
-    <context:component-scan base-package="enumeration" />
-    <context:component-scan base-package="multipart" />
+<!--    <context:component-scan base-package="enumeration" />-->
+<!--    <context:component-scan base-package="multipart" />-->
     <context:component-scan base-package="service" />
 
 

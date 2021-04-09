@@ -55,8 +55,8 @@
     <context:component-scan base-package="controller" />
     <context:component-scan base-package="dao" />
     <context:component-scan base-package="dto" />
-    <context:component-scan base-package="enumeration" />
-    <context:component-scan base-package="multipart" />
+<!--    <context:component-scan base-package="enumeration" />-->
+<!--    <context:component-scan base-package="multipart" />-->
     <context:component-scan base-package="service" />
 
 

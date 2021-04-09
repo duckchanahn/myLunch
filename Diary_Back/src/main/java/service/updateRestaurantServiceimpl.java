@@ -41,9 +41,9 @@ public class updateRestaurantServiceimpl implements updateRestaurantService{
 
         HashMap<String, String> map = new HashMap<>();
 
-        map.put("address", restaurant.getAddress());
-        map.put("restaurantName", restaurant.getRestaurantName());
-        map.put("restaurantCondition", restaurant.getRestaurantCondition());
+        map.put("address", restaurant.getRestaurant_address());
+        map.put("restaurantName", restaurant.getRestaurant_name());
+        map.put("restaurantCondition", restaurant.getRestaurant_condition());
         map.put("tableName", tableName);
 
         return map;

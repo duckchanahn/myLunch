@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mappers.updateRestaurant">
+
+    <insert id="requestRestaurant" parameterType="java.util.HashMap">
+        insert into
+            #{tableName} (
+            restaurant_address, restaurant_name, restaurant_condition
+        )
+        values(
+                  #{address},
+                  #{restaurantName},
+                  #{restaurantCondition}
+              )
+    </insert>
+
+
+
+
+    <insert id="postRestaurant" parameterType="java.util.HashMap">
+        insert into
+            restaurant_seodaemun (
+            restaurant_address, restaurant_name, restaurant_condition, zipcode
+        )
+        values(
+                  #{address},
+                  #{restaurantName},
+                  #{restaurantCondition},
+                  #{zipcode}
+              )
+    </insert>
+
+
+    <update id="putRestaurant" parameterType="java.util.HashMap">
+        UPDATE restaurant_seodaemun
+        SET
+            restaurant_address = #{address},
+            restaurant_name = #{restaurantName},
+            restaurant_condition #{restaurantCondition}
+
+        where id = #{id};
+    </update>
+
+
+</mapper>

@@ -22,7 +22,7 @@ public class restaurantController {
     private service.zipcodeService zipcodeService;
 
     @RequestMapping(method = RequestMethod.GET, value = "user/address/{address}/restaurant/recommend")
-    public restaurant getRestaurant_zipcode(@PathVariable String address) { // 주소 기준으로 기준 없이 랜덤
+    public restaurant getRestaurant_zipcode(@PathVariable String address) { // 기준 없이  주소 랜덤
 
         String zipcode = this.zipcodeService.addressTozipCode(address);
 
@@ -31,7 +31,7 @@ public class restaurantController {
 
 
     @RequestMapping(method = RequestMethod.GET, value = "restaurants/name/{restaurantname}/restaurants")
-    public List<restaurant> getRestaurant_restaurantName(@PathVariable String restaurantname) { // 주소 기준으로 기준 없이 랜덤
+    public List<restaurant> getRestaurant_restaurantName(@PathVariable String restaurantname) { // 레스토랑 이름 일부 검색
         return searchRestaurantService.getRestaurant_searchTorestaurantName(restaurantname);
     }
 
@@ -52,9 +52,9 @@ public class restaurantController {
 
     @RequestMapping(method = RequestMethod.POST, value = "restaurants/{restaurant}")
     public int postRestaurant(@PathVariable restaurant restaurant) { // 새로운 음식점 추가
-        String zipcode = this.zipcodeService.addressTozipCode(restaurant.getAddress());
+        String zipcode = this.zipcodeService.addressTozipCode(restaurant.getRestaurant_address());
 
-        restaurant.setZipcode(zipcode);
+        restaurant.setRestaurant_zipcode(zipcode);
 
         return updateRestaurantService.postRestaurant(restaurant);
     }
