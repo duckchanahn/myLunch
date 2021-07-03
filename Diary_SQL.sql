@@ -1,8 +1,11 @@
+show databases;
+
 Create Database myLunch;
 drop table restaurant_seodaemun;
 drop table Administrative_district;
 
 rename Table restaurant to restaurant_seodaemun;
+rename Table Seodaemun to seodaemun;
 
 
 
@@ -10,7 +13,13 @@ use myLunch;
 
 show tables;
 
+select beopjeong, count(haengjeong) from seodaemun group by beopjeong;
+
+select * from seodaemun;
+
 select * from restaurant_seodaemun;
+
+
 
 select count(*) from restaurant_seodaemun WHERE zipcode = "00000";
 
@@ -47,6 +56,22 @@ Create Table request_put_restaurant(
 	
         primary key(id)
 		);
+        
+        
+Create Table review_restaurant(
+		id int AUTO_INCREMENT,
+        restaurant_address varchar(30), 
+        restaurant_name varchar(20),
+        restaurant_condition varchar(10),
+        explanation varchar(100),
+	
+        primary key(id)
+		);
+        
+Create Table user_info(
+
+
+);
         
 alter table restaurant_seodaemun change address restaurant_address varchar(30);
 alter table restaurant_seodaemun change restaurantName restaurant_name varchar(20);
